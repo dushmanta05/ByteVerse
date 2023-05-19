@@ -2,12 +2,36 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/" href="" /> -->
+    <link rel="icon" type="image/svg+xml" href="./public/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dushmanta | Web Dev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@400;500&family=M+PLUS+1p:wght@400;500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
-    <div id="app"></div>
+    <header>
+      <div class="container">
+      <nav class="flex items-center justify-between">
+        <div class="left flex items-center">
+          <div class="branding">
+            <img src="./images/logo.svg">
+          </div>
+          <div>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Pages</a>
+            <a href="#">Blog</a>
+          </div>
+        </div>
+        <div class="right">
+          <button class="btn btn-primary">Contact</button>
+        </div>
+      </nav>
+    </div>
+    </header>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
