@@ -26,3 +26,23 @@
     border-color: #3DCFD3;
     color: #3DCFD3;
 }
+
+.btn-secondary{
+    background-color: transparent;
+    color: #3DCFD3;
+    border-color: #3DCFD3;
+}
+
+.btn-secondary:hover{
+    background-color: #3DCFD3;
+    color: #161616;
+    border-color: transparent;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.justify-center {
+    justify-content: center;
+}
