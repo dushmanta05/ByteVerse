@@ -256,3 +256,59 @@ section.about .social a{
   height: 100%;
   width: 100%;
  }
+
+ section.blog {
+  background: #161616;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 90%, 0 100%);
+  padding-bottom: 12rem;
+ }
+ section.blog .section-heading{
+  color: #FFFFFF;
+ }
+ section.blog .para{
+  margin-bottom: 4rem;
+ }
+ section.blog .card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+ }
+ section.blog .card-wrapper .card{
+  background: #FFFFFF;
+ }
+
+ section.blog .card-wrapper .card .img-wrapper img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+ }
+ section.blog .card-wrapper .card .card-content{
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+ }
+ section.blog .card-wrapper .card .card-content h1{
+  font-size: 1rem;
+  font-weight: 600;
+  
+ }
+ section.blog .card-wrapper .card .card-content a{
+  color: #070606;
+  text-decoration: none;
+ }
+ section.blog .card-wrapper .card .card-content a:hover{
+  color: #3DCFD3;
+ }
+ section.blog .card-wrapper .card .card-content span{
+  color: #898989;
+  font-size: 0.8rem;
+ }
+ section.blog .card-wrapper .card .card-content p{
+  font-family: 'Lato', sans-serif;
+  color: #898989;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+ }
+ section.blog .card-wrapper .card .card-content a.read-more{
+  font-size: 0.8rem;
+ }
