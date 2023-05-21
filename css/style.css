@@ -14,7 +14,6 @@
 }
 body {
   font-family: 'Poppins', sans-serif;
-  height: 8000px;
 }
 header {
   background-color: #161616;
@@ -365,4 +364,23 @@ section.about .social a{
  section.contact .btn-wrapper{
   text-align: center;
   margin-top: 2rem;
+ }
+ footer{
+  background: #161616;
+  text-align: center;
+  padding: 5rem 0;
+ }
+ footer .footer-logo{
+  width: 180px;
+  margin-bottom: 3rem;
+ }
+ footer .footer-socials{
+  margin-bottom: 3rem;
+  margin-right: -1rem;
+ }
+ footer .footer-socials a{
+  margin-right: 1rem;
+ }
+ footer .copyright{
+  color: #898989;
  }
