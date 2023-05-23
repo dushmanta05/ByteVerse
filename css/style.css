@@ -27,6 +27,11 @@ header {
   padding: 0 15px;
   margin: 0 auto;
 }
+@media (min-width: 400px){
+  .container {
+    max-width: 385px;
+  }
+}
 @media (min-width: 576px){
   .container {
     max-width: 540px;
@@ -99,6 +104,8 @@ section {
 }
 section.about .about-img{
   height: 450px;
+  box-shadow: 12px 12px 2px 1px #3DCFD3;
+  border-radius: 10px;
 }
 section.about h1 {
   margin-bottom: 1rem;
@@ -123,7 +130,7 @@ section.about .social{
   display: flex;
  }
 section.about .social a{
-  background: #161616;
+  background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -151,7 +158,7 @@ section.about .social a{
  .section-heading + p{
   color: #898989;
   font-family: 'Lato', sans-serif;
-  margin-bottom: 8rem;
+  margin-bottom: 5rem;
   text-align: center;
  }
  .section-heading span {
@@ -159,6 +166,9 @@ section.about .social a{
  }
  section.services {
   background: #F2F2F2;
+ }
+ section.services .section-heading + p{
+  margin-bottom: 6rem;
  }
  section.services .card-wrapper{
   display: grid;
@@ -198,11 +208,11 @@ section.about .social a{
  }
  section.freelancer{
   text-align: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
-  background: url(/images/camera.png);
+  background: #161616;
   color: #FFFFFF;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 80%, 0 100%);
-  padding-bottom: 14rem;
+  padding: 3rem 0;
+  padding-bottom: 8rem;
  }
  section.freelancer h1{
   font-size: 2rem;
@@ -247,10 +257,12 @@ section.about .social a{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
+  margin: 0 2rem;
  }
  section.work .card-wrapper .card{
   position: relative;
   height: 250px;
+  overflow: hidden;
  }
  section.work .card-wrapper .card .overlay{
   position: absolute;
@@ -268,7 +280,9 @@ section.about .social a{
   transition: all .3s ease;
  }
  section.work .card-wrapper .card:hover .overlay{
-  opacity: 1;
+  opacity: 0.9;
+  font-weight: 600;
+  border-radius: 10px;
  }
 
  section.work .card-wrapper .card .overlay a{
@@ -278,6 +292,8 @@ section.about .social a{
  section.work .card-wrapper .card img{
   height: 100%;
   width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
  }
 
  section.blog {
@@ -298,6 +314,10 @@ section.about .social a{
  }
  section.blog .card-wrapper .card{
   background: #FFFFFF;
+  border-radius: 10px;
+ }
+ section.blog .card-wrapper .card img{
+  border-radius: 10px 10px 0 0
  }
 
  section.blog .card-wrapper .card .img-wrapper img{
@@ -335,7 +355,7 @@ section.about .social a{
  section.blog .card-wrapper .card .card-content a.read-more{
   font-size: 0.8rem;
  }
-
+ 
  section.contact .card-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -347,10 +367,12 @@ section.about .social a{
  }
  section.contact .card-wrapper .card img{
   margin-bottom: 3rem;
+  height: 50px;
  }
  section.contact .card-wrapper .card h1{
   font-weight: 400;
   margin-bottom: 1rem;
+  font-size: 2rem;
  }
  section.contact .card-wrapper .card h6{
   font-size: 1rem;
@@ -391,18 +413,36 @@ section.about .social a{
  footer{
   background: #161616;
   text-align: center;
-  padding: 5rem 0;
+  padding: 2rem 0 3rem 0;
  }
  footer .footer-logo{
-  width: 180px;
-  margin-bottom: 3rem;
+  width: 200px;
+  margin-bottom: 2rem;
  }
  footer .footer-socials{
-  margin-bottom: 3rem;
-  margin-right: -1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
  }
  footer .footer-socials a{
-  margin-right: 1rem;
+  margin: 0 0.5rem;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 0.6rem;
+  transition: all .3s ease;
+ }
+ footer .footer-socials a:hover{
+  background: #3DCFD3;
+ }
+ footer .footer-socials a img {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
  }
  footer .copyright{
   color: #898989;
@@ -479,41 +519,89 @@ section.about .social a{
     padding-top: 10rem;
   }
   header {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 27% 89%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 23% 89%, 0 100%);
+  }
+  section.about{
+    padding: 3rem 0;
   }
   section.about .about-img {
     height: 360px;
   }
+  section.services {
+    padding: 3rem 0;
+  }
   section.services .card-wrapper{
     grid-template-columns: repeat(2, 1fr);
   }
+  section.reviews {
+    padding: 3rem 0;
+  }
+  section.work {
+    padding: 3rem 0;
+  }
   section.work .card-wrapper{
     grid-template-columns: repeat(2, 1fr);
-    padding: 0 2rem;
+  }
+  section.work .section-heading + p{
+    margin-bottom: 3rem;
   }
   section.blog .card-wrapper{
     grid-template-columns: repeat(1, 1fr);
   }
   section.blog{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 97%, 0 100%);
+    padding-top: 3rem;
+    padding-bottom: 9rem;
+  }
+  section.blog .para {
+    margin-bottom: 3rem;
+  }
+  section.contact {
+    padding: 3rem 0;
+  }
+  section.contact .card-wrapper .card img{
+    height: 50px;
+    margin-bottom: 2rem;
+  }
+  section.contact .card-wrapper .card h2{
+    font-size: 1rem;
+  }
+  footer .footer-logo{
+    width: 150px;
+  }
+  footer .footer-socials a{
+    height: 33px;
+    width: 33px;
   }
  }
-
+ 
  @media (max-width: 576px){
   .hero {
     flex-direction: column;
   }
   header {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 69% 95%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 69% 97%, 0 100%);
   } 
   .hero .right{
+    color: #FFFFFF;
+    margin-top: -10rem;
     position: absolute;
     top: 260px;
     padding: 0 1rem;
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+
+  }
+  .hero .right p{
+    padding-top: 15rem;
+  }
+  .hero .right .btn{
+    margin-bottom: 1rem;
+  }
+  .hero .right .btn-secondary{
+    padding-bottom: 1rem;
   }
   .hero .left{
-    margin-top: -5rem;
+    margin-top: 8rem;
     margin-right: -9rem;
     padding-bottom: 4rem;
   }
@@ -522,7 +610,10 @@ section.about .social a{
   }
   .about .right {
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 3rem;
+  }
+  .about .right p{
+    padding: 0 1rem;
   }
   .about .right .social{
     justify-content: center;
@@ -559,12 +650,31 @@ section.about .social a{
     margin-bottom: 3rem;
   }
   section.blog {
-    padding-bottom: 8rem;
+    padding-bottom: 7rem;
   }
   section.contact .card-wrapper {
     grid-template-columns: repeat(1, 1fr);
   }
+  section.contact .card-wrapper .card img{
+    height: 30px;
+    margin-bottom: 1rem;
+  }
+  section.contact .card-wrapper .card h2{
+    font-size: 1rem;
+  }
   section.contact .input-wrap {
     grid-template-columns: repeat(1, 1fr);
   }
+  footer .footer-logo{
+    width: 150px;
+  }
+  footer .footer-socials a{
+    height: 30px;
+    width: 30px;
+  }
  }
+ /* @media (max-width: 360px){
+  .hero {
+    padding: 6rem 0;
+  }
+ } */
