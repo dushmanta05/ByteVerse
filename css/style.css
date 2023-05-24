@@ -595,7 +595,7 @@ section.about .social a{
     padding-top: 15rem;
   }
   .hero .right .btn{
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
   .hero .right .btn-secondary{
     padding-bottom: 1rem;
@@ -673,8 +673,23 @@ section.about .social a{
     width: 30px;
   }
  }
- /* @media (max-width: 360px){
-  .hero {
-    padding: 6rem 0;
+ @media (max-width: 400px){
+  .hero .right h1 {
+    font-size: 2.5rem;
   }
- } */
+ }
+ @media (max-width: 351px){
+  .hero {
+    padding-bottom: 4rem;
+  }
+ }
+ @media (max-width: 338px){
+  .hero {
+    padding-bottom: 7rem;
+  }
+ }
+ @media (max-width: 322px){
+  .hero {
+    padding-bottom: 9rem;
+  }
+ }
